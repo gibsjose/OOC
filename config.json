@@ -1,0 +1,19 @@
+{
+    "authors": [
+        {
+            "email": "gibsjose@mail.gvsu.edu",
+            "name": "Joe Gibson"
+        }
+    ],
+    "git": true,
+    "git-push": false,
+    "git-remote": "git@github.com:gibsjose/OOC.git",
+    "language": "c",
+    "license": "MIT",
+    "license-url": "https://user.mit-license.org",
+    "project": "OOC",
+    "websites": [
+        "https://www.gibsjose.com",
+        "https://github.com/gibsjose/OOC"
+    ]
+}
