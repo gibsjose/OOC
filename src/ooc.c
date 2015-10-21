@@ -15,20 +15,17 @@
 #include "ooc.h"
 
 int main(int argc, char * argv[]) {
+    //Create a new stack object
     stack * st = Stack.new();
 
-    int * value = Stack.pop(st);
+    for(int i = 0; i < 10; i++) {
+        Stack.push(st, i);
+        printf("Value pushed: %d\n", Stack.peek(st));
+    }
 
-    print("Value 1: %d\n", *value);
+    putchar('\n');
 
-    *value = 1;
-
-    Stack.push(st, &value);
-
-    value = 0;
-    value = Stack.pop(st);
-
-    printf("Value 2: %d\n", *value);
-
-    return 0;
+    while(!Stack.empty(st)) {
+        printf("Value popped: %d\n", Stack.pop(st));
+    }
 }
